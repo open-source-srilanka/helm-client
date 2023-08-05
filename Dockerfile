@@ -11,8 +11,5 @@ RUN rm -rf /var/cache/apk/*
 
 RUN mkdir -p /opt/helm && chmod a+rwx /opt/helm 
 ENV HELM_HOME="/opt/helm"
-WORKDIR /
-ADD . .
-RUN chmod +x entrypoint.sh
-ENTRYPOINT [ "/entrypoint.sh" ]
-#CMD bash
+WORKDIR /opt
+CMD ["bash"]
