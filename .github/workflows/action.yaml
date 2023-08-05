@@ -1,8 +1,15 @@
 name: Build and Push Docker Image for EKS Helm Client
+# on:
+#   push:
+#     branches:
+#       - main
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Helm version'
+        required: true
+        default: 'latest'
 jobs:
   build-and-publish-image:
     runs-on: ubuntu-latest
@@ -26,4 +33,4 @@ jobs:
         with:
           push: true
           platforms: linux/amd64
-          tags: ${{ secrets.DOCKER_USERNAME }}/helm-client:${{ steps.vars.outputs.sha_short }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/helm-client:${{ github.event.inputs.version }}
