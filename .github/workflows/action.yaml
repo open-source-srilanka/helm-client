@@ -2,7 +2,7 @@ name: Build and Push Docker Image for EKS Helm Client
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build-and-publish-image:
     runs-on: ubuntu-latest
