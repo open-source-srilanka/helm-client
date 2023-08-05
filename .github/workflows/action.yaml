@@ -26,4 +26,4 @@ jobs:
         with:
           push: true
           platforms: linux/amd64
-          tags: ${{ secrets.DOCKER_USERNAME }}/projectoss/helm-client:${{ github.event.inputs.version }}
+          tags: projectoss/helm-client:${{ github.event.inputs.version }}
