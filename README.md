@@ -3,6 +3,7 @@
 ![Scrutinizer build (GitHub/Bitbucket)](https://img.shields.io/scrutinizer/build/g/open-source-srilanka/helm-client/main)
 ![Docker Pulls](https://img.shields.io/docker/pulls/projectoss/helm-client)
 ![Docker Image Version (latest semver)](https://img.shields.io/docker/v/projectoss/helm-client)
+![Made With By (ProjectOSS)](https://img.shields.io/badge/made%20with%20love%20by-ProjectOSS-orange)
 
 ## Overview
 
