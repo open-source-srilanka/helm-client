@@ -24,23 +24,23 @@ The Docker Helm Client Agent is a specialized Docker image that acts as a Helm c
 projectoss/helm-client:v3.11.3
 ```
 
-<details>
-  <summary>For Jenkins</summary>
+Sample Jenkins Pipeline Stage
 
-  ```groovy
-    stage('Package Helm Chart') {
-        agent {
-            docker {
-                image 'projectoss/helm-client:v3.11.3'
-            }
-        }
-        steps {
-            sh 'helm version'
-            // your helm commands here
+```groovy
+stage('Package Helm Chart') {
+    agent {
+        docker {
+            image 'projectoss/helm-client:v3.11.3'
         }
     }
+    steps {
+        sh 'helm version'
+        // your helm commands here
+    }
+}
+
 ```
-</details>
+For more detailed usage instructions, please refer to the [Jenkinsfile](https://github.com/dinushchathurya/helm-client-chart/blob/master/Jenkinsfile) in this repository.
 
 ## Contributing
 
