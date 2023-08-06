@@ -43,6 +43,16 @@ stage('Package Helm Chart') {
 ```
 For more detailed usage instructions, please refer to the [Jenkinsfile](https://github.com/dinushchathurya/helm-client-chart/blob/master/Jenkinsfile) in this repository.
 
+Sample GitHub Action Workflow
+
+```yaml
+- name: Check Helm version
+  uses: docker://projectoss/helm-client:v3.11.3
+  with:
+    args: helm version
+```
+For more detailed usage instructions, please refer to the [action.yaml](https://github.com/dinushchathurya/helm-client-chart/blob/master/.github/workflows/action.yaml) in this repository.
+
 ## Contributing
 
 We welcome contributions from the community to enhance and improve this project! If you'd like to contribute, please follow these steps:
