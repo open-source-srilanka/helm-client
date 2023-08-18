@@ -1,11 +1,9 @@
 name: Build and Push Docker Image for Helm Client
 on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'Helm version'
-        required: true
-        default: 'latest'
+  push:
+    branches:
+      - main
+
 jobs:
   build-and-publish-image:
     runs-on: ubuntu-latest
@@ -26,7 +24,7 @@ jobs:
         with:
           push: true
           platforms: linux/amd64
-          tags: projectoss/helm-client:${{ github.event.inputs.version }}
+          tags: projectoss/helm-client:latest
       - name: Update repo description
         uses: peter-evans/dockerhub-description@v3
         with:
