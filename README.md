@@ -50,7 +50,9 @@ Sample GitHub Action Workflow
 - name: Check Helm version
   uses: docker://projectoss/helm-client:latest
   with:
-    args: helm version
+    run: | 
+        helm version
+        # other helm commands here
 ```
 For more detailed usage instructions, please refer to the [action.yaml](https://github.com/dinushchathurya/helm-client-chart/blob/master/.github/workflows/action.yaml) in this repository.
 
