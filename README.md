@@ -54,7 +54,7 @@ Sample GitHub Action Workflow
         helm version
         # other helm commands here
 ```
-For more detailed usage instructions, please refer to the [action.yaml](https://github.com/dinushchathurya/helm-client-chart/blob/master/.github/workflows/action.yaml) in this repository.
+For more detailed usage instructions, please refer to this [action.yaml](https://github.com/dinushchathurya/helm-client-chart/blob/master/.github/workflows/action.yaml) in this repository.
 
 ## Contributing
 
