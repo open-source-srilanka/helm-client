@@ -35,4 +35,4 @@ jobs:
         with:
           push: true
           platforms: linux/amd64
-          tags: projectoss/helm-client:${{ steps.branch_name.outputs.branch }}
+          tags: ${{ secrets.DOCKER_REPO }}/helm-client:${{ steps.branch_name.outputs.branch }}
