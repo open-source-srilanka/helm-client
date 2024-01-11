@@ -22,7 +22,7 @@ The Docker Helm Client Agent is a specialized Docker image that acts as a Helm c
 ## Usage 
 
 ```
-projectoss/helm-client:v3.13.2
+projectoss/helm-client:v3.13.3
 ```
 
 Sample Jenkins Pipeline Stage
@@ -31,7 +31,7 @@ Sample Jenkins Pipeline Stage
 stage('Package Helm Chart') {
     agent {
         docker {
-            image 'projectoss/helm-client:v3.13.2'
+            image 'projectoss/helm-client:v3.13.3'
         }
     }
     steps {
@@ -47,7 +47,7 @@ Sample GitHub Action Workflow
 
 ```yaml
 - name: Check Helm version
-  uses: docker://projectoss/helm-client:v3.13.1
+  uses: docker://projectoss/helm-client:v3.13.3
   with:
     run: | 
         helm version
