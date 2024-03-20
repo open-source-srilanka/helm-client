@@ -24,7 +24,7 @@ The Docker Helm Client Agent is a specialized Docker image that acts as a Helm c
 ```
 projectoss/helm-client:latest
 ```
-Currently `latest` tag refers to Helm version `v3.13.3`
+Currently `latest` tag refers to Helm version `v3.14.3`
 
 Sample Jenkins Pipeline Stage
 
@@ -86,5 +86,5 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Copyright (c) 2023 ProjectOSS
+Copyright (c) 2024 ProjectOSS
 
