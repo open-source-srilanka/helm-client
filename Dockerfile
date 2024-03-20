@@ -1,7 +1,6 @@
 FROM projectoss/alpine:3.14
 
-# FROM: https://github.com/kubernetes/helm/releases
-ENV HELM_VERSION="v3.13.3"
+ENV HELM_VERSION="v3.14.1"
 
 RUN apk add --no-cache ca-certificates bash git gnupg jq py-pip 
 RUN apk add --update -t deps curl gettext 
