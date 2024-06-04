@@ -1,4 +1,4 @@
-FROM projectoss/alpine:3.14
+FROM projectoss/alpine:3.20.0
 
 # FROM: https://github.com/kubernetes/helm/releases
 ENV HELM_VERSION="v3.15.1"
