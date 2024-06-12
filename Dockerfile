@@ -1,7 +1,7 @@
 FROM projectoss/alpine:3.20.0
 LABEL maintainer="projectoss-dinushchathurya"
 LABEL description="Docker image for Helm"
-LABEL version="3.15.1"
+LABEL version="3.15.2"
 
 ENV HELM_VERSION="v3.15.2"
 
