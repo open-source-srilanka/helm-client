@@ -1,9 +1,9 @@
 FROM projectoss/alpine:3.20.0
 LABEL maintainer="projectoss-dinushchathurya"
 LABEL description="Docker image for Helm"
-LABEL version="3.16.2"
+LABEL version="3.16.3"
 
-ENV HELM_VERSION="v3.16.2"
+ENV HELM_VERSION="v3.16.3"
 
 RUN apk add --no-cache ca-certificates bash git gnupg jq py-pip 
 RUN apk add --update -t deps curl gettext 
