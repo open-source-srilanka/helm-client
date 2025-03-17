@@ -3,7 +3,7 @@ LABEL maintainer="projectoss-dinushchathurya"
 LABEL description="Docker image for Helm"
 LABEL version="latest"
 
-ENV HELM_VERSION="v3.17.1"
+ENV HELM_VERSION="v3.17.2"
 
 RUN apk add --no-cache ca-certificates bash git gnupg jq py-pip 
 RUN apk add --update -t deps curl gettext 
