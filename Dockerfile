@@ -1,4 +1,4 @@
-FROM projectoss/alpine:3.20.1
+FROM projectoss/alpine:3.21
 LABEL maintainer="projectoss-dinushchathurya"
 LABEL description="Docker image for Helm"
 LABEL version="latest"
