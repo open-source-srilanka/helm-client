@@ -8,7 +8,6 @@ on:
 
 jobs:
   build-and-publish-image:
-    if: github.event.pull_request.merged == true && github.repository == 'open-source-srilanka/helm-client'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
