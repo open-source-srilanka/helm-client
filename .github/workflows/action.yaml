@@ -32,8 +32,11 @@ jobs:
             echo "tag=${{ steps.branch_name.outputs.branch }}" >> $GITHUB_OUTPUT
           fi
 
+      # 🔑 Required for ARM builds
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
+        with:
+          platforms: arm64
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
@@ -44,11 +47,11 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build and push Docker image
+      - name: Build and push multi-arch Docker image
         uses: docker/build-push-action@v4
         with:
           push: true
-          platforms: linux/amd64
+          platforms: linux/amd64,linux/arm64
           tags: ${{ secrets.DOCKER_REPO }}/helm-client:${{ steps.docker_tag.outputs.tag }}
 
       - name: Update Docker Hub description
