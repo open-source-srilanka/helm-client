@@ -4,7 +4,7 @@ LABEL org.opencontainers.image.title="Helm Client" \
       org.opencontainers.image.description="Production-grade Helm CLI container" \
       org.opencontainers.image.vendor="projectoss" \
       org.opencontainers.image.maintainer="projectoss-dinushchathurya" \
-      org.opencontainers.image.source="https://github.com/open-source-srilanka/eks-helm-client"
+      org.opencontainers.image.source="https://github.com/open-source-srilanka/helm-client"
 
 ARG HELM_VERSION=v4.1.0
 ARG TARGETOS
@@ -45,3 +45,4 @@ WORKDIR /opt
 
 ENTRYPOINT ["helm"]
 CMD ["version"]
+
