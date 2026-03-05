@@ -6,7 +6,7 @@ LABEL org.opencontainers.image.title="Helm Client" \
       org.opencontainers.image.maintainer="projectoss-dinushchathurya" \
       org.opencontainers.image.source="https://github.com/open-source-srilanka/helm-client"
 
-ARG HELM_VERSION=v4.1.0
+ARG HELM_VERSION=v4.1.1
 ARG TARGETOS
 ARG TARGETARCH
 
